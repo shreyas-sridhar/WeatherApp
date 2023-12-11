@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Weather App</title>
+    <style>
+        .main-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .main-content input{
+            padding: 10px 0;
+            border-radius: 10px;
+            border: 2px solid rgb(2, 2, 39);
+            margin: 10px 10px 20px 10px;
+        
+        }
+        .main-content button{
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px solid rgb(2, 2, 39);
+            background-color: rgb(5, 5, 163);
+            color: white;
+            cursor: pointer;
+        }
+        .footer{
+            text-align: center;
+            margin-top: 50px;
+        }
+        .footer p{
+            font-size: 12px;
+        }
+        .header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .header img{
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+        }
+        .footer{
+            margin-top: 150px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 style="text-align: center;">Weather Website</h1>
+            <img src="sun.png" alt="Sun icon" class="img">
+        </div>
+        <div class="main-content">
+            <input type="text" id="cityInput" placeholder="Enter City">
+            <button onclick="getWeather()">Fetch Weather</button>
+            <div id="weatherResult"></div>
+        </div>
+        <div class="footer">
+            <p>&copy; Shreyas Weather Website</p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
